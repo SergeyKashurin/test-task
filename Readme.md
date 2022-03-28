@@ -13,3 +13,11 @@ _Использует фреймворк [https://symfony.com/doc/5.4/](https://
 ``` 
 git clone git@github.com:SergeyKashurin/test-task.git
 ```
+
+Установить зависимости и собрать webpack
+
+``` 
+composer install
+npm install
+npm run dev
+``` 

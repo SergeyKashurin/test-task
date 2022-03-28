@@ -22,6 +22,13 @@ Encore
      */
     .addEntry('app', './assets/app.js')
 
+    .copyFiles({
+        from: './assets/images',
+        to: 'images/[name].[ext]'
+    })
+
+    .autoProvidejQuery()
+
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/controllers.json')
 
@@ -41,6 +48,7 @@ Encore
      */
     .cleanupOutputBeforeBuild()
     .enableBuildNotifications()
+    .enableSassLoader()
     .enableSourceMaps(!Encore.isProduction())
     // enables hashed filenames (e.g. app.abc123.css)
     .enableVersioning(Encore.isProduction())

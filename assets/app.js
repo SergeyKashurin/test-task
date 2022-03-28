@@ -6,7 +6,23 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
+import './css/animate.css';
+import './css/aos.css';
+import './css/fl-bigmug-line.css';
+import './css/magnific-popup.css';
+import './css/mediaelementplayer.css';
+import './css/owl.carousel.min.css';
+import './css/owl.theme.default.min.css';
+import './css/progress-bar.css';
+import './css/style.css';
+import './css/bootstrap.min.css';
+import './css/bootstrap-datepicker.css';
 
-// start the Stimulus application
-import './bootstrap';
+require('./js/aos');
+require('./js/circleaudioplayer');
+require('./js/main');
+require('./js/mediaelement-and-player.min');
+require('./js/owl.carousel.min');
+require('./js/player');
+require('./js/popper.min');
+require('./js/slick.min');
