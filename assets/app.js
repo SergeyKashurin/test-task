@@ -18,6 +18,7 @@ import './css/style.css';
 import './css/bootstrap.min.css';
 import './css/bootstrap-datepicker.css';
 
+require('./js/ajax');
 require('./js/aos');
 require('./js/circleaudioplayer');
 require('./js/main');

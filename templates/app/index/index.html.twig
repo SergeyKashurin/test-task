@@ -58,8 +58,7 @@
 
     <div class="py-5">
         <div class="container">
-            <form class="row mb-5">
-
+            <div class="row mb-5">
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="select-wrap">
                         <span class="icon icon-arrow_drop_down"></span>
@@ -86,10 +85,16 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <input type="submit" class="btn btn-primary btn-block form-control-same-height rounded-0" value="Рассчитать">
+                    <input id="calculate" type="submit" class="btn btn-primary btn-block form-control-same-height rounded-0" value="Рассчитать">
                 </div>
+            </div>
+            <div class="row">
+                <table class = "table">
+                    <tbody id = "result"></tbody>
+                </table>
+            </div>
 
-            </form>
+            <hr/>
 
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
