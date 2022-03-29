@@ -62,32 +62,62 @@
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="select-wrap">
                         <span class="icon icon-arrow_drop_down"></span>
-                        <input class="form-control d-block rounded-0" type="text" placeholder="Откуда" name="calc-form-source" id="calc-form-source">
+                        <select name="calc-form-source" id="calc-form-source" class="form-control d-block rounded-0">
+                            <option value="">Откуда</option>
+                            <option value="Moscow">Москва</option>
+                            <option value="St.Pt">Санкт-Петербург</option>
+                            <option value="Cheremushki">Черемушки</option>
+                            <option value="Ivanovo">Иваново</option>
+                            <option value="Privetovo">Приветово</option>
+                        </select>
+{#                        <input class="form-control d-block rounded-0" type="text" placeholder="Откуда" name="calc-form-source" id="calc-form-source">#}
                     </div>
                 </div>->
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="select-wrap">
                         <span class="icon icon-arrow_drop_down"></span>
-                        <input class="form-control d-block rounded-0" type="text" placeholder="Куда" name="calc-form-to" id="calc-form-to">
+{#                        <input class="form-control d-block rounded-0" type="text" placeholder="Куда" name="calc-form-to" id="calc-form-to">#}
+                        <select name="calc-form-to" id="calc-form-to" class="form-control d-block rounded-0">
+                            <option value="">Куда</option>
+                            <option value="Privetovo">Приветово</option>
+                            <option value="Ivanovo">Иваново</option>
+                            <option value="Cheremushki">Черемушки</option>
+                            <option value="St.Pt">Санкт-Петербург</option>
+                            <option value="Moscow">Москва</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="select-wrap">
+                        <span class="icon icon-arrow_drop_down"></span>
+                        <select name="calc-form-weight" id="calc-form-weight" class="form-control d-block rounded-0">
+                            <option value="">Вес</option>
+                            <option value="calc-form-type-ultra-small">0.1 кг</option>
+                            <option value="calc-form-type-abit-small">0.5 кг</option>
+                            <option value="calc-form-type-small">1 кг</option>
+                            <option value="calc-form-type-big">От 1 до 10 кг</option>
+                            <option value="calc-form-type-king">От 10 до 100 кг</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="select-wrap">
                         <span class="icon icon-arrow_drop_down"></span>
-                        <select name="calc-form-size" id="calc-form-size" class="form-control d-block rounded-0">
-                            <option value="">Размер</option>
-                            <option value="calc-form-type-mail">Конверт</option>
-                            <option value="calc-form-type-box-xs">Коробка XS</option>
-                            <option value="calc-form-type-box-s">Коробка S</option>
-                            <option value="calc-form-type-box-m">Коробка M</option>
-                            <option value="calc-form-type-box-l">Коробка L</option>
+                        <select name="calc-form-delivery-type" id="calc-form-delivery-type" class="form-control d-block rounded-0">
+                            <option value="">Служба доставки</option>
+                            <option value="calc-form-delivery-type-fast">Быстрая доставка</option>
+                            <option value="calc-form-delivery-type-slow">Медленная доставка</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <input id="calculate" type="submit" class="btn btn-primary btn-block form-control-same-height rounded-0" value="Рассчитать">
-                </div>
             </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                <input id="calculate" type="submit" class="btn btn-primary btn-block form-control-same-height rounded-0" value="Рассчитать">
+            </div>
+
             <div class="row">
                 <table class = "table">
                     <tbody id = "result"></tbody>

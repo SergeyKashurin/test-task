@@ -16,6 +16,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "ext-json": "^1.0.1",
         "file-loader": "^6.2.0",
         "jquery": "^3.6.0",
         "sass": "^1.49.9",
